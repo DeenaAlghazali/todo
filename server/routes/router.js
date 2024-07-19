@@ -1,9 +1,10 @@
 const router = require("express").Router();
 const {
-    getTasks,
+    getAllTasks,
     addTask,
     deleteTask,
-    deleteAllTasks
+    deleteAllTasks,
+    editTask
 } = require("../controllers");
 
 // router.get("/favicon.ico", (req, res) => {
@@ -14,9 +15,10 @@ router.get('/', (req, res) => {
     return res.json({message: 'Welcome'});
 })
 
-router.get('/getAllTasks', getTasks);
+router.get('/getAllTasks', getAllTasks);
 router.post('/addTask', addTask);
-router.delete('/deleteTask', deleteTask);
+router.delete('/deleteTask/:id', deleteTask);
 router.delete('/deleteAllTasks', deleteAllTasks);
+router.put('/editTask/:id', editTask);
 
 module.exports = router;

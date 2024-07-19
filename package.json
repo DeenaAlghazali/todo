@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/DeenaAlghazali/Chatbot/issues"
   },
-  "homepage": "https://github.com/DeenaAlghazali/Chatbot#readme"
+  "homepage": "https://github.com/DeenaAlghazali/Chatbot#readme",
+  "devDependencies": {
+    "prettier": "^3.0.0-alpha.6"
+  }
 }
